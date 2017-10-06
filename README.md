@@ -1,5 +1,5 @@
 # ABAP Taxi
-UI5 application for working with transports in SAP 
+UI5 application for working with transports in SAP. 
 Supports proxying of SAP services while running from local server.
 A Node HTTPS server is used to allow persistent user sessions against SAP for installations where the 
 SAP server parameter `login/ticket_only_by_https` is set to 1 (true).
