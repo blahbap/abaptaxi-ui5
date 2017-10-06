@@ -19,5 +19,5 @@ In the file `config/default.json`, enter the names and URLs of one or more SAP s
 
 
 # Running the server 
-1. Execute `node ssl-server`
+1. Execute `node ssl-server.js`
 2. In the browser, go to "https://localhost:3000"
