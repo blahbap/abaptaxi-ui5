@@ -1,9 +1,13 @@
 {
 	"systems":[
 		{	
+			"name":"D03", 
+			"url":"https://sapq2522.statoil.no:4335"
+		},
+		{	
 			"name":"S03", 
-			"url":"https://sap.server.com"
+			"url":"https://sapq1522.statoil.no:4337"
 		}
 	],
-	"userProfileImageUrl":"http://mysite.company.com/User%20Photos/Profile%20Pictures/com-net_{userName}_MThumb.jpg"
+	"userProfileImageUrl":"http://mysite.statoil.com/User%20Photos/Profile%20Pictures/statoil-net_{userName}_MThumb.jpg"
 }
