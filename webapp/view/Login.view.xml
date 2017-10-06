@@ -1,0 +1,13 @@
+<mvc:View controllerName="com.abaptaxi.app.controller.Login" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m">
+	<Page title="Login Form">
+		<content>
+			<VBox fitContainer="true" justifyContent="Center" alignItems="Center" alignContent="Center">
+				<items>
+					<Input id="user" placeholder="User ID"></Input>
+					<Input id="password" placeholder="Password" type="Password"></Input>
+					<Button width="12rem" text="Login" type="Emphasized" press="loginPress"></Button>
+				</items>
+			</VBox>
+		</content>
+	</Page>
+</mvc:View>

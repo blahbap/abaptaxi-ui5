@@ -1,0 +1,101 @@
+{
+	"_version": "1.4.0",
+	"sap.app": {
+		"_version": "1.3.0",
+		"id": "com.abaptaxi.app",
+		"type": "application",
+		"title": "{{appTitle}}",
+		"description": "{{appDescription}}",
+		"i18n": "i18n/i18n.properties",
+		"applicationVersion": {
+			"version": "1.0.0"
+		}
+	},
+	"sap.ui": {
+		"_version": "1.3.0",
+		"technology": "UI5",
+		"deviceTypes": {
+			"desktop": true,
+			"tablet": true,
+			"phone": true
+		},
+		"supportedThemes": ["sap_bluecrystal"]
+	},
+	"sap.ui5": {
+		"_version": "1.2.0",
+		"rootView": {
+			"viewName": "com.abaptaxi.app.view.App",
+			"type": "XML",
+			"id": "app"
+		},
+		"handleValidation": true,
+		"autoPrefixId": true,
+		"dependencies": {
+			"minUI5Version": "1.38.0",
+			"libs": {
+				"sap.ui.core": {
+					"minVersion": "1.38.0"
+				},
+				"sap.m": {
+					"minVersion": "1.38.0"
+				}
+			}
+		},
+		"contentDensities": {
+			"compact": true,
+			"cozy": true
+		},
+		"models": {
+			"i18n": {
+				"type": "sap.ui.model.resource.ResourceModel",
+				"settings": {
+					"bundleName": "com.abaptaxi.app.i18n.i18n"
+				}
+			}
+		},
+		"routing": {
+			"config": {
+				"routerClass": "sap.m.routing.Router",
+				"viewType": "XML",
+				"viewPath": "com.abaptaxi.app.view",
+				"controlId": "app",
+				"controlAggregation": "pages"
+			},
+			"routes": [{
+				"pattern": "",
+				"name": "login",
+				"target": "login"
+			}, {
+				"pattern": "overview",
+				"name": "overview",
+				"target": "overview"
+			},{
+			}, {
+				"pattern": "list",
+				"name": "list",
+				"target": "list"
+			},{
+				"pattern": "detail/{procedureId}",
+				"name": "detail",
+				"target": "detail"
+			}],
+			"targets": {
+				"menu": {
+					"viewName": "Menu"
+				},
+				"login": {
+					"viewName": "Login"
+				},
+				"overview": {
+					"viewName": "Overview"
+				},
+				"list": {
+					"viewName": "List"
+				},
+				"detail": {
+					"viewName": "Detail"
+				}
+			}
+		}
+	}
+}

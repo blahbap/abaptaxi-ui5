@@ -1,0 +1,37 @@
+<mvc:View controllerName="com.abaptaxi.app.controller.List" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m">
+			<Page title="Transports">
+				<content>
+	 				<Table id="idProductsTable"
+					inset="false" 
+					items="{
+						path: 'transportModel>/'
+					}">
+					 
+						<headerToolbar>
+						</headerToolbar>
+						<columns>
+							<Column>
+								<Text text="Transport" />
+							</Column>
+							<Column>
+								<Text text="User" />
+							</Column>
+						</columns>
+						<items>
+							<ColumnListItem>
+								<cells>
+									<ObjectIdentifier
+										title="{transportModel>trkorr}"
+										text="{transportModel>as4text}"/>
+								</cells>
+								<cells>
+									<ObjectIdentifier
+										title="{transportModel>as4user}" />
+								</cells>
+							</ColumnListItem>
+						</items>
+
+					</Table> 
+				</content>
+			</Page>
+</mvc:View>

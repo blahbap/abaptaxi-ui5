@@ -1,0 +1,9 @@
+{
+	"systems":[
+		{	
+			"name":"S03", 
+			"url":"https://sap.server.com"
+		}
+	],
+	"userProfileImageUrl":"http://some.server/{userName}_MThumb.jpg"
+}
